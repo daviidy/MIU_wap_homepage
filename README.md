@@ -17,7 +17,7 @@ Instructions of the assignment:
 
 ## Live Demo
 
-[Live Demo Link](https://daviidy.github.io/news-week-clone/)
+[Live Demo Link](https://daviidy.github.io/MIU_wap_homepage/)
 
 ## Authors
 
