@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    font-family: Georgia, Garamond, sans-serif;
+
+    font-size: 11pt;
+
+    background-color: white;
+}
+
+h2, h3, h4 {
+    text-decoration: underline;
+}
+
+h2,
+h3,
+h4 {
+    font-size: 18pt;
+    text-transform: uppercase;
+    background-color: #F0F0F0;
+    margin-bottom: 2rem;
+    font-family: Lucida Sans Unicode,
+    Helvetica,
+    Arial, sans-serif;
+}
+
+h2, h3, h4, a {
+    color: #A4A400;
+}
+
+p {
+    line-height: 2rem;
+}
+
+ul,
+ol {
+    padding-left: 2rem;
+}
+
+ol span {
+    font-weight: bold;
+}
+
+blockquote {
+    background-color: yellow;
+    font-style: italic;
+    margin: 3rem;
+}
+
+pre {
+    width: 30%;
+    font-family: monospace;
+    margin-top: 2rem;
+    text-align: right;
+}
+
+#container {
+    padding: 3rem;
+}
+
+.title h2 {
+    text-align: center;
+    font-size: 22pt;
+}
+
+.title {
+    border-bottom: 2px solid black;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+footer {
+    border-top: 1px solid #333945;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background: white;
+}
+
+.copyright,
+.social {
+    width: 50%;
+}
+
+.social {
+    text-align: right;
+}
+
+.social i {
+    margin: 0 10px;
+    font-size: 1.5em;
+}
