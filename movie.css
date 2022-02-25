@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    background: url("./images/background.png");
+    font-size: 8pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.back {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    margin: 2rem;
+}
+
+.back-div {
+    text-align: center;
+    margin: 2rem;
+}
+
+.banner, .banner img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 24pt;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px #999999;
+}
+
+.overall {
+    width: 80%;
+    margin: 4rem auto -50px auto;
+    border: 4px solid gray;
+    border-radius: 20px;
+    background-color: #A2B964;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.left-block {
+    width: 70%;
+    background: url("./images/background.png");
+}
+
+.right-block {
+    width: 30%;
+    padding-bottom: 2rem;
+    background-color: #A2B964;
+}
+
+.pagination {
+    text-align: center;
+    margin: 2rem;
+}
+
+.percentage {
+    width: 100%;
+    background: url("./images/rbg.png");
+    font-size: 80pt;
+    color: red;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+
+.column {
+    width: 47%;
+    margin-bottom: 2rem;
+}
+
+.review {
+    background: #E8DC9B;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: 8pt;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.column > p {
+    display: flex;
+}
+
+.right-block img {
+    width: 100%;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+dd {
+    margin-left: 2rem;
+}
+
+.list {
+    padding-left: 1.5rem;
+}
+
+.links {
+    float: right;
+}
