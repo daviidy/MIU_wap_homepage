@@ -5,3 +5,10 @@
 .navbar-brand {
     color: white !important;
 }
+
+.back {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+}
