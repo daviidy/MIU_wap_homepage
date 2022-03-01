@@ -235,7 +235,7 @@ window.onload = () => {
 
   setInterval(() => {
     const timer = document.getElementById('clock')
-    if (clock) {
+    if (timer) {
       const today = new Date()
       const date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate() + ' ' + today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds()
 
