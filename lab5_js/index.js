@@ -180,3 +180,66 @@ const findSecondBiggest = (array) => {
 
 console.log('//12')
 console.log(findSecondBiggest([19, 9, 11, 0, 12]))
+
+// 13
+
+const printFibo = (n, a, b) => {
+  const nums = []
+  let counter = 1
+  let next
+
+  nums.push(a, b)
+
+  while (counter <= n) {
+    next = a + b
+    a = b
+    b = next
+    nums.push(next)
+    counter++
+  }
+  for (let i = 1; i <= n; i++) {
+    console.log(nums[i])
+  }
+}
+
+console.log('//13')
+printFibo(4, 0, 1)
+
+// 14 - 15
+
+window.onload = () => {
+  const button1 = document.getElementById('button1')
+  if (button1) {
+    button1.addEventListener('click', (e) => {
+      e.preventDefault()
+      const inputs = document.querySelectorAll('#form1 input')
+      for (let i = 0; i < inputs.length; i++) {
+        console.log(inputs[i].value)
+      }
+    })
+  }
+
+  const button2 = document.getElementById('button2')
+
+  if (button2) {
+    button2.addEventListener('click', (e) => {
+      e.preventDefault()
+      let res = ''
+      const inputs = document.querySelectorAll('#form2 input')
+      for (let i = 0; i < inputs.length; i++) {
+        res += inputs[i].value + '/'
+      }
+      alert(res)
+    })
+  }
+
+  setInterval(() => {
+    const timer = document.getElementById('clock')
+    if (clock) {
+      const today = new Date()
+      const date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate() + ' ' + today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds()
+
+      timer.innerHTML = date
+    }
+  }, 1000)
+}
