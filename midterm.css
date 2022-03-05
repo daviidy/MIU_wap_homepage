@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    font-family: 'Montserrat',
+        sans-serif;
+}
+
+.bg-blue {
+    background-color: #4d90CC;
+}
+
+.navbar-collapse p{
+    color: white;
+}
+
+.nav-link {
+    border-left: 1px solid white;
+}
+
+.disabled {
+    color: lightgray;
+}
+
+img {
+    float: right;
+}
+
+.btn-secondary {
+    margin-right: 10px;
+}
