@@ -58,3 +58,37 @@ console.log(add5())
 // console.log(add())
 
 console.log(counter)
+
+// const bob = {
+//   name: '',
+//   log: function () {
+//     this.name = 'hello'
+//     const setName = name => {
+//       this.name = name
+//     }
+//     setName('one')
+//     console.log(this.name)
+//   }
+// }
+
+// // bob.log()
+// // console.log(bob.name)
+
+// const person = {
+//   age: 0,
+//   add: function (n) {
+//     this.age += n
+//     console.log(this.age)
+//   }
+// }
+
+// const sum = n => {
+//   this.add(n)
+//   console.log(this)
+// }
+
+// const newFunc = sum.bind(person)
+
+// newFunc(5)
+
+// // sum.call(person, 5)
