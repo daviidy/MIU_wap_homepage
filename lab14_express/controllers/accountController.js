@@ -17,6 +17,16 @@ const accountController = (function () {
     }
   }
 
+  const getSingleAccount = async (req, res) => {
+    try {
+      const account = await accountDAO.getSingleAccount(req)
+      return account
+    } catch (error) {
+      res.status(500)
+      res.render('50x', {error: error})
+    }
+  }
+
   const addAccount = async (req, res) => {
     // const accountNo = parseInt(req.body.accountNo)
     const accountNo = req.body.accountNo
@@ -36,7 +46,8 @@ const accountController = (function () {
 
   return {
     getAccounts,
-    addAccount
+    addAccount,
+    getSingleAccount
   }
 })()
 

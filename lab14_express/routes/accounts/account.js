@@ -26,4 +26,13 @@ accountRouter.post('/add', async (req, res, next) => {
   res.redirect(303, '/accounts/list')
 })
 
+accountRouter.get('/edit/:id', async (req, res, next) => {
+  console.log('edit an account')
+  const account = await accountController.getSingleAccount(req, res)
+  console.log(account)
+  res.render('accounts/edit', {
+    account
+  })
+})
+
 module.exports = accountRouter

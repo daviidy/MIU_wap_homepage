@@ -27,6 +27,21 @@ const accountDAO = (function () {
     }
   }
 
+  const getSingleAccount = async (req) => {
+    console.log(req.params.id)
+    const qryStrGetAccounts = `SELECT * FROM accounts WHERE id='${req.params.id}'`
+    try {
+      // we connect to the db
+      const dbConnection = dbConnectionMgr.getConnection()
+      // we execute the query
+      const account = await dbConnection.promise().query(qryStrGetAccounts)
+      return account
+    } catch (error) {
+      console.log(`DB Access Error: ${error}`)
+      throw error
+    }
+  }
+
   const saveAccount = async (data) => {
     console.log(data.type)
     const cmdStrSaveAccount = `insert into accounts (number, custName, type) values ('${data.accountNo}', '${data.custName}', '${data.type}')`
@@ -43,7 +58,8 @@ const accountDAO = (function () {
 
   return {
     getAccounts,
-    saveAccount
+    saveAccount,
+    getSingleAccount
   }
 })()
 
